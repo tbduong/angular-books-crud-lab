@@ -5,7 +5,6 @@ angular.module('libraryApp', ['ngRoute'])
 ////////////
 // ROUTES //
 ////////////
-
 config.$inject = ['$routeProvider', '$locationProvider'];
 function config (  $routeProvider,   $locationProvider  )  {
   $routeProvider
@@ -22,7 +21,7 @@ function config (  $routeProvider,   $locationProvider  )  {
     .otherwise({
       redirectTo: '/'
     });
-    
+
   // this just makes it so our URLs don't have /#/ in them.
   $locationProvider
     .html5Mode({
